@@ -16,13 +16,14 @@ public class Activity_AddItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_item);
 
-        //////////// link ListView to Cursor from DB
+        //////////// link Activity_ListView to Cursor from DB
         commands =new mCommands(this);
         Cursor cursor=commands.getDbQuery(mConstants.DB_ITEM_TABLE);
         mItemCursorAdapter adapter=new mItemCursorAdapter(this,cursor,0);
 
         addItemsLV= (ListView) findViewById(R.id.addItemsLV);
         addItemsLV.setAdapter(adapter);
+
 
 
 

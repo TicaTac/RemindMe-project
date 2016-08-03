@@ -5,20 +5,20 @@ package com.clm.remindme;
  */
 public class mConstants {
 
-    static String DB_FILE="remindme.db";
+    static final String DB_FILE="remindme.db";
 
-    static int DB_VERSION = 10;
-    static String DB_ID="_ID";
+    static final int DB_VERSION = 10;
+    static final String DB_ID="_id";
 
-    static String DB_ITEM_TABLE="Items";
-    static String DB_ITEM_NAME="Item";
-    static String DB_ITEM_IMAGE="Image";
+    static final String DB_ITEM_TABLE="Items";
+    static final String DB_ITEM_NAME="Item";
+    static final String DB_ITEM_IMAGE="Image";
 
-    static String DB_HISTORY_TABLE="History";
-    static String DB_HISTORY_ITEM="Item";
-    static String DB_HISTORY_DESC="Description";
-    static String DB_HISTORY_TIME="Time";
-    static String DB_HISTORY_IMAGE="Image";
+    static final String DB_HISTORY_TABLE="History";
+    static final String DB_HISTORY_ITEM="Item";
+    static final String DB_HISTORY_DESC="Description";
+    static final String DB_HISTORY_TIME="Time";
+    static final String DB_HISTORY_IMAGE="Image";
 
 
 }

@@ -19,17 +19,17 @@ public class mDbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         String DbCreateItemTableQuery=
                   "CREATE TABLE "+mConstants.DB_ITEM_TABLE
-                + "( "+mConstants.DB_ID+" INTEGER PRIMARY AUTOINCREMENT ,"
-                + mConstants.DB_ITEM_NAME+" String, "
-                + mConstants.DB_ITEM_IMAGE+" String"
+                + "( "+mConstants.DB_ID+" INTEGER PRIMARY KEY  ,"
+                + mConstants.DB_ITEM_NAME+" TEXT, "
+                + mConstants.DB_ITEM_IMAGE+" TEXT"
                 + " );" ;
         String DbCreateHistoryTableQuery=
                 "CREATE TABLE "+mConstants.DB_HISTORY_TABLE
-                        + "( "+mConstants.DB_ID+" INTEGER PRIMARY AUTOINCREMENT ,"
-                        + mConstants.DB_HISTORY_ITEM+" String, "
-                        + mConstants.DB_HISTORY_DESC+" String, "
-                        + mConstants.DB_HISTORY_TIME+" String, "
-                        + mConstants.DB_HISTORY_IMAGE+" String "
+                        + "( "+mConstants.DB_ID+" INTEGER PRIMARY KEY  ,"
+                        + mConstants.DB_HISTORY_ITEM+" TEXT, "
+                        + mConstants.DB_HISTORY_DESC+" TEXT, "
+                        + mConstants.DB_HISTORY_TIME+" TEXT, "
+                        + mConstants.DB_HISTORY_IMAGE+" TEXT "
                         + " );" ;
         db.execSQL(DbCreateItemTableQuery);
         db.execSQL(DbCreateHistoryTableQuery);
