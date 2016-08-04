@@ -8,16 +8,34 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".Activity_ListView"
             android:label="@string/title_activity_list_view"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity_AddItem"></activity>
+
+
+        <activity
+            android:name=".Activity_AddItem"
+            android:label="@string/title_activity_add_item"
+            android:theme="@style/Theme.AppCompat.DayNight.Dialog">
+
+
+
+            <!--android:theme="@style/Theme.AppCompat.CompactMenu"-->
+
+
+
+
+
+
+        </activity>
     </application>
 
 </manifest>
